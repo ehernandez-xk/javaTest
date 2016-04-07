@@ -1,5 +1,10 @@
-image: java
-script:
-  - mvn clean package
-  - mvn clean install
-  - mvn -version
+compose:
+  database:
+    image: quay.io/xumak/oracle-7-jdk
+    auth_config:
+      username: ehernandez
+      password: $$QUAY_PASS
+      script:
+        - mvn clean package
+        - mvn clean install
+        - mvn -version
