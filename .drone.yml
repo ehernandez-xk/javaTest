@@ -1,4 +1,5 @@
-image: java
+image: quay.io/xumak/oracle-8-jdk
 script:
   - mvn clean package
   - mvn clean install
+  - mvn -version
