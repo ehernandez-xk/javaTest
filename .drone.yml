@@ -1,8 +1,6 @@
-image: quay.io/xumak/oracle-8-jdk
-  auth_config:
-    username: ehernandez
-    password: $$QUAY_PASS
+image: java
 script:
   - mvn clean package
   - mvn clean install
   - mvn -version
+  - docker images
