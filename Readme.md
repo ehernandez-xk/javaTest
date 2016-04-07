@@ -1,3 +1,5 @@
+#javaTest
+
 Install the archetype:
 
 mvn clean install
