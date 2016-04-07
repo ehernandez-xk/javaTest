@@ -1,3 +1,4 @@
 image: java
 script:
+  - mvn clean package
   - mvn clean install
