@@ -3,4 +3,3 @@ script:
   - mvn clean package
   - mvn clean install
   - mvn -version
-  - docker images
