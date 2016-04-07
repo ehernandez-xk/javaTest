@@ -1,6 +1,5 @@
 build:
   image: quay.io/xumak/oracle-8-jdk
-  registry: quay.io
   username: $$QUAY_USER
   password: $$QUAY_PASS
   commands:
