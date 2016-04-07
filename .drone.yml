@@ -1,5 +1,5 @@
 build:
-  image: java
+  image: maven
   commands:
     - mvn clean package
     - mvn clean install
