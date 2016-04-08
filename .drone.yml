@@ -5,4 +5,5 @@ build:
     password: $$QUAY_PASS
   commands:
     - java -version
-    - mvn clean install
+    - mvn install -q -DskipTests=true
+    - mvn test
