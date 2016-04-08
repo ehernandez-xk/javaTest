@@ -1,7 +1,8 @@
 build:
-  image: quay.io/xumak/oracle-7-jdk
+  image: quay.io/ehernandez/maven
   auth_config:
     username: $$QUAY_USER
     password: $$QUAY_PASS
   commands:
     - java -version
+    - mvn clean install
