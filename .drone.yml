@@ -1,9 +1,10 @@
 build:
-  image: quay.io/ehernandez/maven
+  image: quay.io/ehernandez/java8-maven
   auth_config:
     username: $$QUAY_USER
     password: $$QUAY_PASS
   commands:
     - java -version
+    - mvn -v
     - mvn install -q -DskipTests=true
     - mvn test
