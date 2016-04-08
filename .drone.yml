@@ -1,5 +1,5 @@
 build:
-  image: quay.io/xumak/oracle-8-jdk
+  image: quay.io/xumak/oracle-7-jdk
   auth_config:
     username: $$QUAY_USER
     password: $$QUAY_PASS
