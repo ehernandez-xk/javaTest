@@ -2,6 +2,8 @@
 
 Install the archetype:
 
+test
+
 mvn clean install
 
 Use the archetype:
