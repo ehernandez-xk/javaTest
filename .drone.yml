@@ -1,5 +1,7 @@
-image: java
-script:
-  - mvn clean package
-  - mvn clean install
-  - mvn -version
+pipeline:
+  build:
+    image: golang
+    commands:
+      - go get
+      - go build
+      - go test
