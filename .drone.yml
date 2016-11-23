@@ -2,6 +2,4 @@ pipeline:
   build:
     image: java
     commands:
-      - mvn clean install
-      - mvn clean package
-      - mvn --version
+      - java -version
