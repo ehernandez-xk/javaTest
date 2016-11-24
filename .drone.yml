@@ -5,4 +5,5 @@ pipeline:
       - java -version
       - mvn --version
       - mvn clean install
+      - ls
 
